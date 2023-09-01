@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="PiccoloGrande - Онлайн школа. Обучение программированию. Репетиторство по математике, английскому языку"
+    />
+
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
+    <title>PiccoloGrande &mdash; Online School</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          alt="PiccoloGrande logo"
+          src="images/piccologrande-logo.svg"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">Как это работает</a></li>
+          <li><a class="main-nav-link" href="#meals">Курсы</a></li>
+          <!-- <li>
+            <a class="main-nav-link" href="#testimonials">Отзывы</a>
+          </li> -->
+          <li><a class="main-nav-link" href="#pricing">Стоимость</a></li>
+          <li><a class="main-nav-link" href="#footer">Контакты</a></li>
+          <!-- <li>
+            <a class="main-nav-link nav-cta" href="#cta"
+              >Попробовать бесплатно</a
+            >
+          </li> -->
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Качественные востребованные знания каждый день
+            </h1>
+            <p class="hero-description">
+              Индивидуальные и групповые занятия с преподавателем по математике
+              и программированию на языках Scratch, Python, Javascript, C#.
+              Уроки английского языка. Курсы и марафоны по программированию.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Начать учиться</a
+            >
+
+            <a href="#how" class="btn btn--outline">Узнать больше &darr;</a>
+            <!-- <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img
+                  src="images/customers/customer-1.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="images/customers/customer-2.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="images/customers/customer-3.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="images/customers/customer-4.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="images/customers/customer-5.jpg"
+                  alt="Customer photo"
+                />
+                <img
+                  src="images/customers/customer-6.jpg"
+                  alt="Customer photo"
+                />
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> студентов прошли обучение в прошлом году!
+              </p>
+            </div> -->
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="images/hero.webp" type="image/webp" />
+              <source srcset="images/hero.png" type="image/png" />
+
+              <img src="images/hero.png" class="hero-img" alt="Kids coding" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="images/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="images/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="images/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="images/logos/forbes.png" alt="Forbes logo" />
+            <img src="images/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section> -->
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">Как это работает</span>
+          <h2 class="heading-secondary">
+            Ваши знания становятся обширнее с каждым днем
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Выберите программу обучения</h3>
+            <p class="step-description">
+              Обучение языкам программирования? У нас есть курсы по Scratch для
+              детей, для детей 7-16 лет есть курсы по Python, HTML + CSS +
+              Javascript, а также C#. Может хотите заниматься математикой или
+              английским языком? Есть программы и по этим направлениям
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="images/app/courses-screen-1.png"
+              class="step-img"
+              alt="iPhone app
+            preferences selection screen"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="images/app/calendar-screen-2.png"
+              class="step-img"
+              alt="iPhone app
+            meal approving plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Выберите желаемый темп занятий</h3>
+            <p class="step-description">
+              У нас есть возможность выбрать комфортную для вас скорость
+              обучения. Можно заниматься в группе с фиксированным графиком - 2
+              занятия в неделю, можно выбрать индивидуальный план с
+              преподавателем, а так же есть возможность приобрести курс и
+              заниматься самостоятельно в своем темпе, отправляя домашние
+              задания преподавателю на проверку
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Закрепляйте свои знания</h3>
+            <p class="step-description">
+              Лучшим доказательством эффективности обучения будут отличные
+              оценки в школе, безупречно написанные контрольные работы и
+              выполненные вами проекты. На каждом нашем курсе мы подробно
+              разбираем методические материалы, добиваемся полного понимания
+              предмета учеником. На курсах по программированию каждый ученик в
+              итоге сделает свой проект
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="images/app/success-screen-3.png"
+              class="step-img"
+              alt="iPhone app
+            delivery screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Курсы</span>
+          <h2 class="heading-secondary">Выберите подходящий для вас курс</h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="course">
+            <img
+              src="images/courses/math-1.jpg"
+              class="course-img"
+              alt="Math"
+            />
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="tag tag--individual">1 на 1</span>
+              </div>
+              <p class="course-title">Математика</p>
+              <ul class="course-attributes">
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="rocket-outline"></ion-icon>
+                  <span>Олимпиадные задачи</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="stats-chart-outline"></ion-icon>
+                  <span>Подготовка к ЕГЭ и ОГЭ</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="calculator-outline"></ion-icon>
+                  <span>Алгебра и Геометрия</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="time-outline"></ion-icon>
+                  <span>Занятие <strong>60</strong> минут</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course">
+            <img
+              src="images/courses/programming-2.jpg"
+              class="course-img"
+              alt="Programming"
+            />
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="tag tag--individual">1 на 1</span>
+                <span class="tag tag--group">Группа</span>
+                <span class="tag tag--marathon">Марафоны</span>
+              </div>
+              <p class="course-title">Программирование</p>
+              <ul class="course-attributes">
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="settings-outline"></ion-icon>
+                  <span>Scratch</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="logo-python"></ion-icon>
+                  <span>Python</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="logo-javascript"></ion-icon>
+                  <span>HTML, CSS, Javascript</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="time-outline"></ion-icon>
+                  <span>Занятие <strong>60</strong> минут</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="course">
+            <img
+              src="images/courses/english-3.jpg"
+              class="course-img"
+              alt="English"
+            />
+            <div class="course-content">
+              <div class="course-tags">
+                <span class="tag tag--individual">1 на 1</span>
+                <span class="tag tag--group">Группа</span>
+              </div>
+              <p class="course-title">Английский язык</p>
+              <ul class="course-attributes">
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="stats-chart-outline"></ion-icon>
+                  <span>Подготовка к ЕГЭ и ОГЭ</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="book-outline"></ion-icon>
+                  <span>Учебник Cutting Edge</span>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="book-outline"></ion-icon>
+                  <span>Учебник Outcomes</span>
+                </li>
+                </li>
+                <li class="course-attribute">
+                  <ion-icon class="course-icon" name="time-outline"></ion-icon>
+                  <span>Занятие <strong>60</strong> минут</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+    
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Стоимость</span>
+          <h2 class="heading-secondary">
+            Получайте качественные современные знания не тратя на это целое
+            состояние
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Индивидуально</p>
+              <p class="plan-price"><span>₽</span>950</p>
+              <p class="plan-text">за урок 60 мин</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>2-3 занятия в неделю</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Гибкий график</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Бесплатные учебные материалы</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Пробное занятие всего за ₽ 200</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#" class="btn btn--full">Начать учиться</a>
+            </div>
+          </div>
+
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Группа</p>
+              <p class="plan-price"><span>₽</span>650</p>
+              <p class="plan-text">за урок 60 мин</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>2 занятия в неделю</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Фиксированный график</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Бесплатные учебные материалы</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Группа до 6 человек</span>
+              </li>
+            </ul>
+            <div class="plan-sing-up">
+              <a href="#" class="btn btn--full">Начать учиться</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Все программы обучения включают следующее:
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Сертификат обучения</p>
+            <p class="feature-text">
+              Все дети, закончившие наши курсы, получают фирменный сертификат
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Профессиональные преподаватели</p>
+            <p class="feature-text">
+              В нашей школе преподают только опытные квалифицированные
+              специалисты
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">Пауза в любой момент</p>
+            <p class="feature-text">
+              Уезжаете в отпуск или слишком большая занятость в данный момент?
+              Можно приостановить обучение и продолжить его, когда вам будет
+              удобно
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Безусловный возврат денег</p>
+            <p class="feature-text">
+              Не понравилась методика обучения, поменялись планы или возожности?
+              Мы вернем вам деньги, если вы решите отказаться от обучения в
+              первые две недели
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Запишитесь на первое пробное занятие всего за 200 рублей!
+              </h2>
+              <p class="cta-text">
+              </p>
+
+              <form action="https://piccologrande.io/api/Email" method="POST" id="submitForm" class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="fullName">Имя и фамилия</label>
+                  <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Маша Иванова"
+                    name="fullName"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="emailAddress">Email</label>
+                  <input
+                    id="emailAddress"
+                    type="text"
+                    placeholder="me@example.com"
+                    name="emailAddress"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="option">Программа обучения</label>
+                  <select id="option" name="option" required>
+                    <option value="">Выберите программу:</option>
+                    <option value="math">Математика</option>
+                    <option value="english">Английский язык</option>
+                    <option value="scratch">Scratch</option>
+                    <option value="python">Python</option>
+                    <option value="js">Javascript</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Отправить заявку</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Programming"
+            ></div>            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Piccologrande logo"
+              src="images/piccologrande-logo.svg"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="https://vk.com/piccolo_grande"
+                ><ion-icon class="social-icon" name="logo-vk"></ion-icon
+              ></a>
+            </li>
+            <!-- <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li> -->
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> PiccoloGrande
+            Все права защищены.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Контакты</p>
+          <address class="contacts">
+            <p class="address">
+              Ленинградская область, город Гатчина
+            </p>
+            <p>
+              <!-- <a class="footer-link" href="tel:123">123</a
+              ><br /> -->
+              <a class="footer-link" href="mailto:piccolograndeschool@yandex.ru"
+                >piccolograndeschool@yandex.ru</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <!-- <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav> -->
+
+        <!-- <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav> -->
+
+        <!-- <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul> -->
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
