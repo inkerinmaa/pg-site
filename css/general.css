@@ -253,6 +253,13 @@ body {
   gap: 1.6rem;
 }
 
+.list-v {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
 .list-item {
   font-size: 1.8rem;
   display: flex;

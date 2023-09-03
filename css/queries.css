@@ -292,6 +292,10 @@
     height: 32rem;
     grid-row: 1;
   }
+
+  .list-v {
+    gap: 6rem;
+  }
 }
 
 /* 
